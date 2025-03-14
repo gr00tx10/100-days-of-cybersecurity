@@ -1,21 +1,38 @@
-nmap 
--Pn (skip ping)  ip/dns/ip-files/dns/file
+# Nmap  
 
-##Ports
--p- (All)  
--p 20,21,80
--p 100-500 (Between)
+## Skipping Host Discovery (Ping)  
+nmap -Pn 
 
--pT (TCP)
--sV sevice
+<ip/dns/ip-file/dns-file>
 
--T3
+## All ports
+nmap -p- <target>
 
--f fragment
+## Specific Ports 
+nmap -p 20,21,80 <target>
+nmap -p 100-500 <target>
 
--vv 
+## TCP 
+nmap -pT <target>
 
--oN file.txt (output)
--oX xml (ext) (output)
+## Service Detection 
+nmap -sV <target>
 
+## Timing Speed, Accuracy 
+nmap -T3 <target>
+
+## Packet Fragmentation  (Firewall)
+nmap -f <target>
+
+## 
+nmap -A <target>
+
+## Verbose
+nmap -vv <target>
+
+## Output Normal 
+nmap <target> -oN <file.txt> 
+
+## Output XML
+nmap <target> -oX <file> 
 
