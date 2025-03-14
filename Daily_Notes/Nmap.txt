@@ -24,7 +24,7 @@ nmap -T3 <target>
 ## Packet Fragmentation  (Firewall)
 nmap -f <target>
 
-## 
+## Aggressive 
 nmap -A <target>
 
 ## Verbose
