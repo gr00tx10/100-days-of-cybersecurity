@@ -1,0 +1,21 @@
+nmap 
+-Pn (skip ping)  ip/dns/ip-files/dns/file
+
+##Ports
+-p- (All)  
+-p 20,21,80
+-p 100-500 (Between)
+
+-pT (TCP)
+-sV sevice
+
+-T3
+
+-f fragment
+
+-vv 
+
+-oN file.txt (output)
+-oX xml (ext) (output)
+
+
