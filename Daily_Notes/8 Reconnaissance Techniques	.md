@@ -1,9 +1,6 @@
-Reconnaissance
+#Reconnaissance
 
-Tools-
-Dirb, Gobuster, Sublist3r, GHunt, Maltego, Shodan
-
-Dork-
+##Dork-
 eg- site:(temp.com) filetype:pdf confidential
 
 
@@ -20,3 +17,8 @@ eg- site:(temp.com) filetype:pdf confidential
 | **TheHarvester** | `theharvester -d example.com -b google` | Gathers emails and subdomains from public sources, including DNS information. |
 | **dnstracer** | `dnstracer example.com`       | Traces the path of DNS queries to their authoritative servers. |
 | **whois**     | `whois example.com`           | Provides domain registration details, DNS servers, and contact information. |
+|**Ghunt**|`ghunt --domain example.com`|A tool designed for gathering intelligence on Google accounts, including DNS information and subdomains. |
+|**Maltego**|`maltego -h`|A powerful tool for visualizing relationships between entities (domains, emails, subdomains, etc.) in a graph.|
+|**Shodan**| `www.shodan.io` |A search engine for discovering internet-connected devices and services, including DNS-related information.
+|
+|**Dirb Gobuster**|`gobuster dir -u http://example.com -w wordlist.txt`|A tool for directory and subdomain brute-forcing with support for various DNS-related attacks.|
